@@ -1,0 +1,42 @@
+.examples__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.examples__position {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.examples__picture {
+    position: relative;
+    overflow: hidden;
+}
+
+.examples__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    padding: 27px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--main-white);
+    background: rgba(47, 48, 58, 0.8);
+    transition: transform 250ms var(--cubic-main);
+}
+
+.examples__picture:hover .examples__text {
+    transform: translateY(-100%);
+}

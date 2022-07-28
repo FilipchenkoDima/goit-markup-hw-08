@@ -1,0 +1,78 @@
+.team {
+    background-color: #F5F4FA;
+}
+
+.team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.worker {
+    background-color: #F5F4FA;
+    display: flex;
+    gap: 30px;
+}
+
+.worker__position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.worker__card {
+    background: var(--main-white);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.worker__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: var(--text-gray);
+}
+
+.worker__social {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.worker__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-white);
+    border-radius: 50%;
+    fill: #AFB1B8;
+
+    transition: background-color 250ms var(--cubic-main),
+        fill 250ms var(--cubic-main),
+        border-radius 250ms var(--cubic-main);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-color);
+        fill: var(--main-white);
+    }
+}
+

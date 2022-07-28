@@ -1,0 +1,10 @@
+.link {
+    text-decoration: none;
+    transition: color 250ms var(--cubic-main);
+
+    &:hover,
+    &:focus {
+            color: var(--main-color);
+        }
+}
+

@@ -1,0 +1,36 @@
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients__company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: fill 250ms var(--cubic-main), border-color 250ms var(--cubic-main);
+
+    &:hover,
+    &:focus {
+        fill: var(--main-color);
+        border-color: var(--main-color);
+    }
+}
+

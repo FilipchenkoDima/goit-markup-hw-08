@@ -1,0 +1,134 @@
+footer {
+    background-color: var(--background-secondary);
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__position {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__map {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+
+    color: var(--main-white);
+    margin-bottom: 9px;
+}
+
+.footer__contact {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+
+    display: block;
+}
+
+.mail {
+    margin-bottom: 9px;
+}
+
+.footer__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--main-white);
+}
+
+.footer__join {
+    margin-left: 70px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    fill: var(--main-white);
+
+    transition: background-color 250ms var(--cubic-main);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--main-color);
+    }
+}
+
+
+
+.footer__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    background-color: var(--background-secondary);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--background-main);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+.footer__subscribe {
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+.footer__send {
+    margin-left: 10px;
+}
