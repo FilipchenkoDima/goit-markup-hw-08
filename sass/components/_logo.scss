@@ -11,19 +11,21 @@
     text-decoration: none;
 
     &--blue {
-            color: var(--main-color);
-        }
-    
-    &--right {
-        margin-right: 93px;
+        color: var(--main-color);
     }
-    
-    &--bottom {
-        margin-bottom: 20px;
-    }
-    
+
     &--white {
         color: var(--main-white);
+    }
+
+    @media screen and (min-width: 1200px) {
+        &--right {
+            margin-right: 93px;
+        }
+        
+        &--bottom {
+            margin-bottom: 20px;
+        }
     }
 }
 

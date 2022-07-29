@@ -1,7 +1,7 @@
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
 
     margin-bottom: 50px;
@@ -9,8 +9,7 @@
 
 .clients__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -18,9 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     fill: #AFB1B8;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

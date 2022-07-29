@@ -33,11 +33,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -48,8 +63,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .link.current {
@@ -91,14 +106,16 @@ body {
 .logo--blue {
   color: var(--main-color);
 }
-.logo--right {
-  margin-right: 93px;
-}
-.logo--bottom {
-  margin-bottom: 20px;
-}
 .logo--white {
   color: var(--main-white);
+}
+@media screen and (min-width: 1200px) {
+  .logo--right {
+    margin-right: 93px;
+  }
+  .logo--bottom {
+    margin-bottom: 20px;
+  }
 }
 
 .nav {
@@ -106,14 +123,18 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-
-.header__position {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .nav__part {
@@ -262,11 +283,6 @@ footer {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__position {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer__map {
