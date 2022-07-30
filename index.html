@@ -23,29 +23,45 @@
                 <div>
                     <a href="./" class="logo logo--right"><span class="logo--blue">Web</span>Studio</a>
                 </div>
-                <!-- <nav class="nav">
-                    <ul class="nav__items">
-                        <li><a href="./index.html" class="link nav__part current">Студія</a></li>
-                        <li><a href="./portfolio.html" class="link nav__part">Портфоліо</a></li>
-                        <li><a href="" class="link nav__part">Контакти</a></li>
-                    </ul>
-                </nav>
-                <ul class="contact">
-                        <li>
-                            <a href="mailto:info@devstudio.com" class="link contact__link">
-                                <svg class="contact__icon" width="16" height="12">
-                                    <use href="./images/icons/symbol-defs.svg#mail"></use>
-                                </svg>
-                                info@devstudio.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:+380961111111" class="link contact__link">
-                                <svg class="contact__icon" width="10" height="16">
-                                    <use href="./images/icons/symbol-defs.svg#smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
-                        </li>
-                </ul> -->
+                <div class="header__menu" id="header__menu" data-menu>
+                    <nav class="nav">
+                        <ul class="nav__items">
+                            <li><a href="./index.html" class="link nav__part current">Студія</a></li>
+                            <li><a href="./portfolio.html" class="link nav__part">Портфоліо</a></li>
+                            <li><a href="" class="link nav__part">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="contact">
+                            <li>
+                                <a href="mailto:info@devstudio.com" class="link contact__link contact__mail">
+                                    <svg class="contact__icon" width="16" height="12">
+                                        <use href="./images/icons/symbol-defs.svg#mail"></use>
+                                    </svg>
+                                    info@devstudio.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+380961111111" class="link contact__link contact__phone">
+                                    <svg class="contact__icon" width="10" height="16">
+                                        <use href="./images/icons/symbol-defs.svg#smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="header__soc-links">
+                            <li class="header__social-thumb"><a href="#" class="link header__social">Instagram</a></li>
+                            <li class="header__social-thumb"><a href="#" class="link header__social">Twitter</a></li>
+                            <li class="header__social-thumb"><a href="#" class="link header__social">Facebook</a></li>
+                            <li class="header__social-thumb"><a href="#" class="link header__social">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="header__menu" data-menu-button>
+                    <svg width="40" height="40">
+                        <use class="header__icon-menu" href="./images/icons/symbol-defs.svg#menu"></use>
+                        <use class="header__icon-cross" href="./images/icons/symbol-defs.svg#close-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -141,7 +157,16 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="worker">
                     <li class="worker__card">
-                        <img srcset="./images/team/mobile/team-mob-1.jpg 1x, ./images/team/mobile/team-mob-1@2x.jpg 2x" src="./images/team/mobile/team-mob-1.jpg"  lang="en" alt="Product Designer" width="460px">
+                        <picture>
+                            <source srcset=" ./images/team/desktop/team-desk-1.jpg 270w, ./images/team/desktop/team-desk-1@2x.jpg 540w"
+                                sizes="270px" media="(min-width: 1200px)" />
+                            <source srcset=" ./images/team/tablet/team-tab-1.jpg 354w, ./images/team/tablet/team-tab-1@2x.jpg 708w"
+                                sizes="354px" media="(min-width: 768px)" />
+                            <source srcset=" ./images/team/mobile/team-mob-1.jpg 450w, ./images/team/mobile/team-mob-1@2x.jpg 900w"
+                                sizes="450px" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-mob-1.jpg" lang="en" alt="Product Designer">
+                        </picture>
+                        <!-- <img srcset="./images/team/mobile/team-mob-1.jpg 1x, ./images/team/mobile/team-mob-1@2x.jpg 2x" src="./images/team/mobile/team-mob-1.jpg"  lang="en" alt="Product Designer" width="460px"> -->
                         <div class="worker__position">
                             <h3 class="worker__title">Ігор Дем'яненко</h3>
                             <p class="worker__text">Product Designer</p>
@@ -182,7 +207,16 @@
                         </div>
                     </li>
                     <li class="worker__card">
-                        <img srcset="./images/team/mobile/team-mob-2.jpg 1x, ./images/team/mobile/team-mob-2@2x.jpg 2x" src="./images/team/mobile/team-mob-2.jpg"  lang="en" alt="Frontend Developer" width="460px">
+                        <picture>
+                            <source srcset=" ./images/team/desktop/team-desk-2.jpg 270w, ./images/team/desktop/team-desk-2@2x.jpg 540w"
+                                sizes="270px" media="(min-width: 1200px)" />
+                            <source srcset=" ./images/team/tablet/team-tab-2.jpg 354w, ./images/team/tablet/team-tab-2@2x.jpg 708w"
+                                sizes="354px" media="(min-width: 768px)" />
+                            <source srcset=" ./images/team/mobile/team-mob-2.jpg 450w, ./images/team/mobile/team-mob-2@2x.jpg 900w"
+                                sizes="450px" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-mob-2.jpg" lang="en" alt="Product Designer">
+                        </picture>
+                        <!-- <img srcset="./images/team/mobile/team-mob-2.jpg 1x, ./images/team/mobile/team-mob-2@2x.jpg 2x" src="./images/team/mobile/team-mob-2.jpg"  lang="en" alt="Frontend Developer" width="460px"> -->
                         <div class="worker__position">
                             <h3 class="worker__title">Ольга Рєпіна</h3>
                             <p class="worker__text">Frontend Developer</p>
@@ -223,7 +257,16 @@
                         </div>
                     </li>
                     <li class="worker__card">
-                        <img srcset="./images/team/mobile/team-mob-3.jpg 1x, ./images/team/mobile/team-mob-3@2x.jpg 2x" src="./images/team/mobile/team-mob-3.jpg" lang="en" alt="Marketing" width="460px">
+                        <picture>
+                            <source srcset=" ./images/team/desktop/team-desk-1.jpg 270w, ./images/team/desktop/team-desk-3@2x.jpg 540w"
+                                sizes="270px" media="(min-width: 1200px)" />
+                            <source srcset=" ./images/team/tablet/team-tab-3.jpg 354w, ./images/team/tablet/team-tab-3@2x.jpg 708w"
+                                sizes="354px" media="(min-width: 768px)" />
+                            <source srcset=" ./images/team/mobile/team-mob-3.jpg 450w, ./images/team/mobile/team-mob-3@2x.jpg 900w"
+                                sizes="450px" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-mob-3.jpg" lang="en" alt="Product Designer">
+                        </picture>
+                        <!-- <img srcset="./images/team/mobile/team-mob-3.jpg 1x, ./images/team/mobile/team-mob-3@2x.jpg 2x" src="./images/team/mobile/team-mob-3.jpg" lang="en" alt="Marketing" width="460px"> -->
                         <div class="worker__position">
                             <h3 class="worker__title">Микола Тарасов</h3>
                             <p class="worker__text">Marketing</p>
@@ -264,7 +307,16 @@
                         </div>                     
                     </li>
                     <li class="worker__card">
-                        <img srcset="./images/team/mobile/team-mob-4.jpg 1x, ./images/team/mobile/team-mob-4@2x.jpg 2x" src="./images/team/mobile/team-mob-4.jpg" lang="en" alt="UI Designer" width="460px">
+                        <picture>
+                            <source srcset=" ./images/team/desktop/team-desk-4.jpg 270w, ./images/team/desktop/team-desk-4@2x.jpg 540w"
+                                sizes="270px" media="(min-width: 1200px)" />
+                            <source srcset=" ./images/team/tablet/team-tab-4.jpg 354w, ./images/team/tablet/team-tab-4@2x.jpg 708w"
+                                sizes="354px" media="(min-width: 768px)" />
+                            <source srcset=" ./images/team/mobile/team-mob-4.jpg 450w, ./images/team/mobile/team-mob-4@2x.jpg 900w"
+                                sizes="450px" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-mob-4.jpg" lang="en" alt="Product Designer">
+                        </picture>
+                        <!-- <img srcset="./images/team/mobile/team-mob-4.jpg 1x, ./images/team/mobile/team-mob-4@2x.jpg 2x" src="./images/team/mobile/team-mob-4.jpg" lang="en" alt="UI Designer" width="460px"> -->
                         <div class="worker__position">
                             <h3 class="worker__title">Михайло Єрмаков</h3>
                             <p class="worker__text">UI Designer</p>
@@ -312,42 +364,42 @@
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a href="" class="clients__company">
                             <svg width="106" height="60">
                                 <use href="./images/icons/symbol-defs.svg#logo6"></use>
@@ -362,8 +414,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__position">
-                <div>
-                    <a href="./" class="logo logo--bottom logo--white">
+                <div class="footer__info">
+                    <a href="./" class="logo logo--bottom logo--white logo--center logo--down">
                         <span class="logo--blue">Web</span>Studio
                     </a>
                     <address>
@@ -503,6 +555,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

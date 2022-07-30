@@ -11,6 +11,10 @@
 
 .advantage__cards {
     width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 .advantage__title {
@@ -28,10 +32,6 @@
     line-height: 1.71;
 
     color: var(--text-gray);
-}
-
-.advantage__text:not(:last-child) {
-    margin-bottom: 30px;
 }
 
 .advantage__icons {

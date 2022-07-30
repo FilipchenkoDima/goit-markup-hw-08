@@ -4,8 +4,8 @@
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
@@ -16,6 +16,14 @@
 
     &--white {
         color: var(--main-white);
+    }
+
+    &--center {
+        justify-content: center;
+    }
+    
+    &--down {
+        margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
