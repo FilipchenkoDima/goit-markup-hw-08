@@ -5,6 +5,10 @@
     text-align: center;
 
     margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+    }
 }
 
 .clients__list {
@@ -15,6 +19,14 @@
 
 .clients__item {
     width: calc((100% - 30px) / 2);
+
+    @media (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @media (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__company {

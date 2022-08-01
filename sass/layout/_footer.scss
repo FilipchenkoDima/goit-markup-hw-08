@@ -11,6 +11,12 @@ footer {
     text-align: center;
     // display: flex;
     // align-items: baseline;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 .footer__info {
@@ -113,6 +119,10 @@ footer {
     display: flex;
     flex-flow: column;
     margin-left: auto;
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 .footer__form {

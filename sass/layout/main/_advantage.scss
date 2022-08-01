@@ -4,13 +4,19 @@
 }
 
 .advantage__position {
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 30px;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;         
+    }
 }
 
 .advantage__cards {
     width: 100%;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
 
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -25,6 +31,10 @@
     text-align: center;
 
     margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        text-align: start;
+    }
 }
 
 .advantage__text {

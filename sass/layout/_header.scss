@@ -8,6 +8,10 @@
     border-bottom: 1px solid #ececec;
     padding: 10px 0;
 
+    @media (min-width: 768px) {
+        padding: 20px 0;
+    }
+
     @media screen and  (min-width: 1200px) {
         padding-top: 24px;
         padding-bottom: 25px;
@@ -28,6 +32,11 @@
     font-size: 40px;
     line-height: 1.18;
     
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
     @media (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.14;
@@ -44,6 +53,11 @@
 
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .header__soc-links {
@@ -59,14 +73,21 @@
     color: var(--main-color);
 }
 
- .header__social-thumb:not(:last-child)::before {
-    content: " ";
-    width: 22px;
-    height: 1px;
+.header__social-thumb {
+    position: relative;
+    display: flex;
+    align-items: center;
 
-    background: rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
- }
+    &:not(:last-child):after {
+        content: " ";
+        display: block;
+        width: 22px;
+        height: 1px;
+    
+        background: rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        }
+}
 
 @media (max-width: 767px) {
     .contact__phone {
@@ -81,7 +102,7 @@
     }
 
     .header__soc-links {
-        display: flex;
+        display: inline-flex;
     }
 }
 
@@ -107,6 +128,12 @@
     gap: 32px;
     margin-bottom: 64px;
 
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+
     @media (min-width: 1200px) {
         gap: 50px;
         margin-left: auto;
@@ -120,7 +147,9 @@
 
     @media (min-width: 768px) {
         align-items: center;
+        flex-direction: row;
         gap: 50px;
+        margin-right: 96px;
     }
 }
 
@@ -130,7 +159,7 @@
     display: inline-flex;
     margin: 0;
     padding: 0;
-    z-index: 20;
+    z-index: 30;
 
     &:hover,
     &:focus {
@@ -164,6 +193,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    z-index: 20;
 
     &.is-open {
         display: flex;
@@ -171,6 +201,12 @@
         justify-content: space-between
     }
   }
+}
+
+.header__menu {
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
  
 @media (min-width: 768px) {
