@@ -62,7 +62,8 @@
     transition: transform 250ms var(--cubic-main);
 }
 
-.card:hover .card__text-animation {
+.card:hover .card__text-animation,
+.card:focus .card__text-animation {
     transform: translateY(-100%);
 }
 
