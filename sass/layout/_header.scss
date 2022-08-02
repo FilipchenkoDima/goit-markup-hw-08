@@ -58,6 +58,11 @@
         font-size: 12px;
         line-height: 1.17;
     }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .header__soc-links {
@@ -135,8 +140,9 @@
     }
 
     @media (min-width: 1200px) {
-        gap: 50px;
+        gap: 30px;
         margin-left: auto;
+        flex-direction: row;
     }
 }
 
@@ -150,6 +156,10 @@
         flex-direction: row;
         gap: 50px;
         margin-right: 96px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 0px;
     }
 }
 
@@ -206,6 +216,11 @@
 .header__menu {
     @media (min-width: 768px) {
         display: flex;
+    }
+
+    @media (min-width: 1200px) {
+        flex-grow: 1;
+        justify-content: space-between;
     }
 }
  

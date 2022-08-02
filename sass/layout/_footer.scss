@@ -9,18 +9,25 @@ footer {
 
 .footer__position {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
 
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
+    @media (min-width: 1200px) {
+        text-align: start;
+        align-items: baseline;
+    }
 }
 
 .footer__info {
     margin-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__map {
@@ -61,8 +68,8 @@ footer {
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        margin-bottom: 0;
     }
-    
 }
 
 .footer__links {
@@ -91,8 +98,6 @@ footer {
     }
 }
 
-
-
 .footer__input {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -111,9 +116,11 @@ footer {
     
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media (min-width: 1200px) {
+        width: 358px;
+    }
 }
-
-
 
 .footer__subscribe {
     display: flex;
@@ -123,12 +130,21 @@ footer {
     @media (min-width: 768px) {
         margin-left: 0;
     }
+
+    @media (min-width: 1200px) {
+        margin-left: auto;
+
+    }
 }
 
 .footer__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .footer__btn {
@@ -152,6 +168,9 @@ footer {
     background-color: var(--main-color);
 
     margin-top: 20px;
+    @media (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .footer__send {

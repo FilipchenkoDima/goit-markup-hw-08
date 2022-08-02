@@ -66,6 +66,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media (min-width: 767px) {
   .current::after {
@@ -124,6 +130,9 @@ body {
   }
   .logo--bottom {
     margin-bottom: 20px;
+  }
+  .logo--center {
+    justify-content: start;
   }
 }
 
@@ -190,6 +199,12 @@ body {
   .contact__link {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -263,8 +278,9 @@ body {
 }
 @media (min-width: 1200px) {
   .contact {
-    gap: 50px;
+    gap: 30px;
     margin-left: auto;
+    flex-direction: row;
   }
 }
 
@@ -279,6 +295,11 @@ body {
     flex-direction: row;
     gap: 50px;
     margin-right: 96px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav__items {
+    margin-right: 0px;
   }
 }
 
@@ -329,6 +350,12 @@ body {
 @media (min-width: 768px) {
   .header__menu {
     display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .header__menu {
+    flex-grow: 1;
+    justify-content: space-between;
   }
 }
 
@@ -398,6 +425,13 @@ body {
     max-width: 360px;
   }
 }
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
 
 .hero__btn {
   font-weight: 700;
@@ -419,11 +453,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.advantage {
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
 @media (min-width: 768px) {
   .advantage__position {
     display: flex;
@@ -442,6 +471,11 @@ body {
 }
 .advantage__cards:not(:last-child) {
   margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .advantage__cards {
+    max-width: 270px;
+  }
 }
 
 .advantage__title {
@@ -495,6 +529,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 94px;
 }
 
 .examples__picture {
@@ -539,6 +574,12 @@ body {
     margin-bottom: 30px;
   }
 }
+@media (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 
 .worker {
   background-color: #F5F4FA;
@@ -569,6 +610,11 @@ body {
 @media (max-width: 767px) {
   .worker__card:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .worker__card {
+    width: 270px;
   }
 }
 
@@ -620,6 +666,12 @@ body {
 @media (min-width: 768px) {
   .clients__title {
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -700,6 +752,18 @@ body {
     max-width: 450px;
     width: 100%;
     height: 609px;
+  }
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 450px;
+    max-height: 609px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -801,10 +865,28 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 768px) {
+  .modal__agree {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media (min-width: 1200px) {
+  .modal__agree {
+    font-size: 14px;
+    line-height: 1.17;
+    justify-content: center;
+  }
+}
 
 .modal__agree-link {
   color: var(--main-color);
   margin-left: 4px;
+}
+@media (min-width: 332px) and (max-width: 433px) {
+  .modal__agree-link {
+    margin-left: 24px;
+  }
 }
 
 .modal__checkbox {
@@ -874,9 +956,20 @@ footer {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1200px) {
+  .footer__position {
+    text-align: start;
+    align-items: baseline;
+  }
+}
 
 .footer__info {
   margin-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .footer__info {
+    margin-bottom: 0;
+  }
 }
 
 .footer__map {
@@ -915,6 +1008,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__join {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -955,6 +1049,11 @@ footer {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
+}
 
 .footer__subscribe {
   display: flex;
@@ -966,11 +1065,21 @@ footer {
     margin-left: 0;
   }
 }
+@media (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: auto;
+  }
+}
 
 .footer__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (min-width: 1200px) {
+  .footer__form {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__btn {
@@ -991,6 +1100,11 @@ footer {
   color: #FFFFFF;
   background-color: var(--main-color);
   margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .footer__btn {
+    margin-top: 0;
+  }
 }
 
 .footer__send {
