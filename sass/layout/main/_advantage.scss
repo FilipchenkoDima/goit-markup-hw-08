@@ -9,12 +9,15 @@
 .advantage__cards {
     width: 100%;
 
+    &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
     @media (min-width: 768px) {
         max-width: 354px;
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 
     @media (min-width: 1200px) {

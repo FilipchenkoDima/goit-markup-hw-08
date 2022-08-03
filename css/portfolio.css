@@ -246,6 +246,7 @@ body {
   }
   .header__soc-links {
     display: inline-flex;
+    flex-wrap: wrap;
   }
 }
 .contact__icon {
@@ -395,6 +396,11 @@ body {
     justify-content: center;
   }
 }
+@media (min-width: 1200px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
+  }
+}
 
 .portfolio__button.active {
   color: var(--main-white);
@@ -461,7 +467,8 @@ body {
   transition: transform 250ms var(--cubic-main);
 }
 
-.card:hover .card__text-animation {
+.card:hover .card__text-animation,
+.card:focus .card__text-animation {
   transform: translateY(-100%);
 }
 
